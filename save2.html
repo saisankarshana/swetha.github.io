@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="sty.css">
+    <style type="text/css">
+      body{
+            background-image: url("background.jpg");
+            background-size: cover;
+        }
+
+        a:hover
+        {
+  background-color: #563d7c;
+  border: 1px solid #563d7c;
+        }
+    </style>
+</head>
+<body>
+<section id="loginBox">
+<h2>Login</h2>
+<form method="post" class="minimal">
+        <label for="username">
+            Username:
+            <input type="text" name="username" id="username" placeholder="Username must be between 8 and 20 characters" pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{8,20}$" required="required" />
+        </label>
+        <label for="password">
+            Password:
+            <input type="password" name="password" id="password" placeholder="Password must contain 1 uppercase, lowercase and number" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+        </label>
+        <a href="login.html" class="btn btn-outline-secondary">login </a>
+    </form>
+</section>
+</body>
+</html>
